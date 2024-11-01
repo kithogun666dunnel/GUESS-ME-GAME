@@ -1,7 +1,7 @@
 'use strict';
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
+let score = 5;
 let highScore = 0;
 // REFACTORING CODE with functions
 const displayMessage = function (message) {
@@ -46,7 +46,7 @@ document.querySelector(`.check`).addEventListener('click', function () {
     }
 });
 document.querySelector(`.again`).addEventListener(`click`, function () {
-    score = 20;
+    score = 5;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
     displayScore(score);
     document.querySelector(`body`).style.backgroundColor = `#222`;
